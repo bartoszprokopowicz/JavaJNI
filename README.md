@@ -12,3 +12,7 @@ Instrukcja:
 </br>
 5)Uruchomić program Javy
 </br>
+To Do:
+</br>
+DODAĆ USUWANIE OBIEKTÓW W KODZIE C++
+</br>
