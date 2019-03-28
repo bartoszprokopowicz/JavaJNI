@@ -1,0 +1,3 @@
+﻿  ScalarImp.cpp
+     Creating library D:\Uczelnia\Java\lab05\kod c++\ScalarImp\x64\Release\ScalarImp.lib and object D:\Uczelnia\Java\lab05\kod c++\ScalarImp\x64\Release\ScalarImp.exp
+LINK : fatal error LNK1561: entry point must be defined
