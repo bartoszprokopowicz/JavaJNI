@@ -15,6 +15,5 @@ Instrukcja:
 </br>
 Done:
 </br>
-<ln>Zmieniono z typu prymitywnego double na klase Double</ln>
-<ln>Dodano sprzątanie po wykonanych operacjach na obiektach</ln>
-
+<p>Zmieniono z typu prymitywnego double na klase Double</p>
+<p>Dodano sprzątanie po wykonanych operacjach na obiektach</p>
