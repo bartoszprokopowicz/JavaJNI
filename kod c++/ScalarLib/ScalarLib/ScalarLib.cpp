@@ -3,24 +3,44 @@
 #include "stdafx.h"
 #include "JNI.h"
 
-JNIEXPORT jdouble JNICALL Java_JNI_multi01(JNIEnv *env, jobject klasa, jdoubleArray a, jdoubleArray b)
+JNIEXPORT jobject JNICALL Java_JNI_multi01(JNIEnv *env, jobject klasa, jobjectArray a, jobjectArray b)
 {
-	int lengthA = env->GetArrayLength(a);
-	double *aLib = new double[lengthA];
-
-	int lengthB = env->GetArrayLength(b);
-	double *bLib = new double[lengthB];
-
-	aLib = env->GetDoubleArrayElements(a, 0);
-	bLib = env->GetDoubleArrayElements(b, 0);
-
+	jobject ao;
+	jobject bo;
+	jclass ca;
+	jmethodID doubleValue;
 	jdouble jsum;
-	double sum = 0;
 
+	double *aLib;
+	double *bLib;
+	double sum;
+
+	int lengthA = env->GetArrayLength(a);
+	int lengthB = env->GetArrayLength(b);
+	ao = env->GetObjectArrayElement(a, 0);
+	bo = env->GetObjectArrayElement(b, 0);
+
+	ca = env->GetObjectClass(ao);
+	doubleValue = env->GetMethodID(ca, "doubleValue", "()D");
+
+	if (doubleValue == NULL)
+		return NULL;
+
+	aLib = new double[lengthA];
+	bLib = new double[lengthB];
+
+	sum = 0;
+	
 	if (lengthA > lengthB)
 	{
 		for (int i = 0; i < lengthB; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+			
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
@@ -28,41 +48,74 @@ JNIEXPORT jdouble JNICALL Java_JNI_multi01(JNIEnv *env, jobject klasa, jdoubleAr
 	{
 		for (int i = 0; i < lengthA; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
-
+	
 	jsum = static_cast<jdouble>(sum);
 
-	return jsum;
+	jmethodID init = env->GetMethodID(ca, "<init>", "(D)V");
+	jobject x = env->NewObject(ca, init, jsum);
+
+	delete aLib, bLib;
+	env->DeleteLocalRef(ca);
+	env->DeleteLocalRef(ao);
+	env->DeleteLocalRef(bo);
+
+	return x;
 }
 
-JNIEXPORT jdouble JNICALL Java_JNI_multi02(JNIEnv *env, jobject klasa, jdoubleArray a)
+JNIEXPORT jobject JNICALL Java_JNI_multi02(JNIEnv *env, jobject klasa, jobjectArray a)
 {
-	jdoubleArray b;
-	jfieldID fid;
-
-	int lengthA = env->GetArrayLength(a);
-	double *aLib = new double[lengthA];
-
-	jclass cls = env->GetObjectClass(klasa);
-	fid = env->GetFieldID(cls, "b", "[D");
-	if (fid == NULL) { return NULL; }
-	b = (jdoubleArray)env->GetObjectField(klasa, fid);
-	
-	int lengthB = env->GetArrayLength(b);
-	double *bLib = new double[lengthB];
-
-	aLib = env->GetDoubleArrayElements(a, 0);
-	bLib = env->GetDoubleArrayElements(b, 0);
-
+	jobjectArray b;
+	jobject ao;
+	jobject bo;
+	jclass cls;
+	jclass ca;
 	jdouble jsum;
-	double sum = 0;
+	jfieldID fid;
+	jmethodID doubleValue;
+
+	double *aLib;
+	double *bLib;
+	double sum;
+
+	cls = env->GetObjectClass(klasa);
+	fid = env->GetFieldID(cls, "b", "[Ljava/lang/Double;");
+	if (fid == NULL) 
+		return NULL;
+
+	b = (jobjectArray)env->GetObjectField(klasa, fid);
+	
+	int lengthA = env->GetArrayLength(a);
+	int lengthB = env->GetArrayLength(b);
+	aLib = new double[lengthA];
+	bLib = new double[lengthB];
+
+	ao = env->GetObjectArrayElement(a, 0);
+	bo = env->GetObjectArrayElement(b, 0);
+
+	ca = env->GetObjectClass(ao);
+	doubleValue = env->GetMethodID(ca, "doubleValue", "()D");
+
+	sum = 0;
 
 	if (lengthA > lengthB)
 	{
 		for (int i = 0; i < lengthB; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
@@ -70,48 +123,79 @@ JNIEXPORT jdouble JNICALL Java_JNI_multi02(JNIEnv *env, jobject klasa, jdoubleAr
 	{
 		for (int i = 0; i < lengthA; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
 
 	jsum = static_cast<jdouble>(sum);
+	jmethodID init = env->GetMethodID(ca, "<init>", "(D)V");
+	jobject x = env->NewObject(ca, init, jsum);
 
-	return jsum;
+	delete aLib, bLib;
+	env->DeleteLocalRef(ca);
+	env->DeleteLocalRef(ao);
+	env->DeleteLocalRef(bo);
+
+	return x;
 }
 
 JNIEXPORT void JNICALL Java_JNI_multi03(JNIEnv *env, jobject klasa)
 {
-	jdoubleArray a;
-	jdoubleArray b;
-	jfieldID fid;
+	jobjectArray a;
+	jobjectArray b;
+	jobject ao;
+	jobject bo;
 	jclass cls;
+	jclass ca;
+	jdouble jsum;
+	jfieldID fid;
+	jmethodID doubleValue;
+
+	double *aLib;
+	double *bLib;
+	double sum;
 
 	cls = env->GetObjectClass(klasa);
-	fid = env->GetFieldID(cls, "a", "[D");
-	if (fid == NULL) { return; }
-	a = (jdoubleArray)env->GetObjectField(klasa, fid);
+
+	fid = env->GetFieldID(cls, "a", "[Ljava/lang/Double;");
+	if (fid == NULL)
+		return;
+	a = (jobjectArray)env->GetObjectField(klasa, fid);
+
+	fid = env->GetFieldID(cls, "b", "[Ljava/lang/Double;");
+	if (fid == NULL)
+		return;
+	b = (jobjectArray)env->GetObjectField(klasa, fid);
 
 	int lengthA = env->GetArrayLength(a);
-	double *aLib = new double[lengthA];
-
-	cls = env->GetObjectClass(klasa);
-	fid = env->GetFieldID(cls, "b", "[D");
-	if (fid == NULL) { return; }
-	b = (jdoubleArray)env->GetObjectField(klasa, fid);
-
 	int lengthB = env->GetArrayLength(b);
-	double *bLib = new double[lengthB];
+	aLib = new double[lengthA];
+	bLib = new double[lengthB];
 
-	aLib = env->GetDoubleArrayElements(a, 0);
-	bLib = env->GetDoubleArrayElements(b, 0);
+	ao = env->GetObjectArrayElement(a, 0);
+	bo = env->GetObjectArrayElement(b, 0);
 
-	jdouble jsum;
-	double sum = 0;
+	ca = env->GetObjectClass(ao);
+	doubleValue = env->GetMethodID(ca, "doubleValue", "()D");
+
+	sum = 0;
 
 	if (lengthA > lengthB)
 	{
 		for (int i = 0; i < lengthB; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
@@ -119,15 +203,30 @@ JNIEXPORT void JNICALL Java_JNI_multi03(JNIEnv *env, jobject klasa)
 	{
 		for (int i = 0; i < lengthA; i++)
 		{
+			ao = env->GetObjectArrayElement(a, i);
+			aLib[i] = env->CallDoubleMethod(ao, doubleValue);
+
+			bo = env->GetObjectArrayElement(b, i);
+			bLib[i] = env->CallDoubleMethod(bo, doubleValue);
+
 			sum += aLib[i] * bLib[i];
 		}
 	}
 
-	jsum = static_cast<double>(sum);
+	jsum = static_cast<jdouble>(sum);
+	fid = env->GetFieldID(cls, "c", "Ljava/lang/Double;");
+	if (fid == NULL) 
+		return;
 
-	cls = env->GetObjectClass(klasa);
-	fid = env->GetFieldID(cls, "c", "D");
-	if (fid == NULL) { return; }
-	env->SetDoubleField(klasa, fid, jsum);
+	jmethodID init = env->GetMethodID(ca, "<init>", "(D)V");
+	jobject x = env->NewObject(ca, init, jsum);
+
+	env->SetObjectField(klasa, fid, x);
+
+	delete aLib, bLib;
+	env->DeleteLocalRef(ca);
+	env->DeleteLocalRef(ao);
+	env->DeleteLocalRef(bo);
+	env->DeleteLocalRef(x);
 }
 

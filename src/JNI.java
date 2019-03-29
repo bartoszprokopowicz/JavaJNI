@@ -1,11 +1,11 @@
 public class JNI {
-    public double[] a;
-    public double[] b;
-    public double c;
+    public Double[] a;
+    public Double[] b;
+    public Double c;
 
-    public native double multi01(double[] a, double[] b);
+    public native Double multi01(Double[] a, Double[] b);
     // zakładamy, że po stronie kodu natywnego wyliczony zostanie iloczyn skalarny dwóch wektorów
-    public native double multi02(double[] a);
+    public native Double multi02(Double[] a);
     // zakładamy, że drugi atrybut będzie pobrany z obiektu przekazanego do metody natywnej
     public native void multi03();
     // zakładamy, że po stronie natywnej utworzone zostanie okienko na atrybuty,
