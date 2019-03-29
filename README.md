@@ -13,7 +13,8 @@ Instrukcja:
 </br>
 5)Uruchomić program Javy
 </br>
-To Do:
+Done:
 </br>
-DODAĆ USUWANIE OBIEKTÓW W KODZIE C++
-</br>
+<ln>Zmieniono z typu prymitywnego double na klase Double</ln>
+<ln>Dodano sprzątanie po wykonanych operacjach na obiektach</ln>
+
