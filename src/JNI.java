@@ -14,7 +14,6 @@ public class JNI {
     // (korzystająca z parametrów a,b i wpisująca wynik do c).
 
     public void multi04(){
-        // mnoży a i b, wynik wpisuje do c
 
         double sum = 0;
         int lengthA = a.length;

@@ -2,71 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0463dee-0462-4285-a865-b18470c77448" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/ipch/AutoPCH/833620e6a1ead660/SCALARIMP.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/ipch/AutoPCH/8bcfc44575248413/SCALARIMP.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/ipch/AutoPCH/9d94be6c581b1523/SCALARIMP.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/.vs/ScalarImp/v15/ipch/AutoPCH/c4a94c36a1586215/JNI.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/Release/ScalarImp.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/Release/ScalarImp.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Debug/ScalarImp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/JNI.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/ScalarImp.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/ScalarImp.tlog/unsuccessfulbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/Release/vc141.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/ScalarImp.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/ScalarImp.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/ScalarImp.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/ScalarImp.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/ScalarImp.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/ScalarImp.tlog/unsuccessfulbuild" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/ScalarImp/x64/Release/vc141.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/x64/Release/ScalarImp.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarImp/x64/Release/ScalarImp.lib" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/.vs/ScalarLib/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/.vs/ScalarLib/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/JNI.h" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/JNI.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/.vs/ScalarLib/v15/ipch/2d9ead3b17d46fa6.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/.vs/ScalarLib/v15/ipch/2d9ead3b17d46fa6.ipch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/ScalarLib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/ScalarLib.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.log" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.obj" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.pch" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.pch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.tlog/ScalarLib.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/ScalarLib.tlog/ScalarLib.write.1u.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/dllmain.obj" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/dllmain.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/stdafx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/stdafx.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/x64/Release/vc141.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Debug/ScalarLib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Debug/ScalarLib.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Debug/ScalarLib.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Debug/ScalarLib.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Debug/ScalarLib.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.iobj" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.iobj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.ipdb" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.ipdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/kod c++/ScalarLib/x64/Release/ScalarLib.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab05/JNI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab05/JNI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab05/JNI.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/lab05/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab05/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JNI.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/JNI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JNI.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JNI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -82,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JNI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -91,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -134,8 +83,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,6 +117,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,11 +172,12 @@
       <updated>1553779951928</updated>
       <workItem from="1553779953523" duration="6818000" />
       <workItem from="1553877577503" duration="6878000" />
+      <workItem from="1553948749019" duration="2206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13696000" />
+    <option name="totallyTimeSpent" value="15902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -241,7 +191,7 @@
   <component name="ToolWindowManager">
     <frame x="172" y="99" width="1610" height="920" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30645162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31032258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,9 +226,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JNI.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JNI.h" />
     <entry file="file://$PROJECT_DIR$/kod c++/ScalarLib/ScalarLib/JNI.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -289,15 +237,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JNI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

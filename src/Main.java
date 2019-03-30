@@ -6,19 +6,12 @@ public class Main {
 
         System.out.println(xxx.multi01(a,b));
 
+        xxx = new JNI();
         xxx.b = b;
         System.out.println(xxx.multi02(a));
 
-        xxx.a = a;
-        xxx.b = b;
+        xxx = new JNI();
         xxx.multi03();
         System.out.println(xxx.c);
-
-        xxx.a = a;
-        xxx.b = b;
-
-        xxx.multi04();
-        System.out.println(xxx.c);
-
     }
 }
